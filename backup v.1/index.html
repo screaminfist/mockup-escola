@@ -1,37 +1,25 @@
-<!doctype html>
-<html class="no-js" lang="es_ES">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Mockup Escola algueró</title>
-        <meta name="description" content="website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         
         <link href="css/ingendo.css" rel="stylesheet" type="text/css">
         <link href="css/ootstrap.css" rel="stylesheet" type="text/css">
         
         <link href="css/responsive.css" rel="stylesheet" type="text/css">
-        <link href="css/navbar.css" rel="stylesheet" type="text/css">
+        <link href="css/avbar.css" rel="stylesheet" type="text/css">
+        <link href="css/carousel.css" rel="stylesheet" type="text/css">
         <link href="css/btn.css" rel="stylesheet" type="text/css">
         <link href="css/embed.css" rel="stylesheet" type="text/css">
         <link href="css/form.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
         
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link href="css/tyle.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <div class="navbar navbar-default navbar-static-top">
+        <div class="navbar">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
@@ -45,7 +33,7 @@
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                    <ul class="nav navbar-nav navbar-left">
+                    <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="#">Escola</a>
                         </li>
@@ -59,7 +47,7 @@
                             <a href="#">Contacte</a>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-right" role="search">
+                    <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search">
                         </div>
@@ -68,66 +56,59 @@
                 </div>
             </div>
         </div>
-        <div id="diy-window" class="col-xs-12">
-            <div id="diy-slider">
-                <figure class="diy-slideshow">
-                    <img src="img/slider_img_1_2000x1500.png" alt="escolaalguero">
-                </figure>
-                <figure class="diy-slideshow">
-                    <img src="img/slider_img_2_2000x1500.png" alt="escolaalguero">
-                </figure>
-                <figure class="diy-slideshow">
-                    <img src="img/slider_img_3_2000x1500.png" alt="escolaalguero">
-                </figure>
-            </div>
-            <div class="caption">
-                <div class="col-md-12 text-center">
-                    <h1>Heading</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
-                    <br>
-                    <br>
-                    <a class="btn btn-lg btn-primary">Click me</a>
+        <div class="carousel slide" id="carousel-example" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png">
+                    <div class="carousel-caption">
+                        <div class="col-md-12 text-center">
+                            <h1 class="text-inverse">Heading</h1>
+                            <p class="text-inverse">Lorem ipsum dolor sit amet, consectetur adipisici eli.</p>
+                            <br>
+                            <br>
+                            <a class="btn btn-lg btn-primary">Click me</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
+            <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
         </div>
-        <div class="section col-xs-12 block">
+        <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-offset-1 col-xs-10 text-center">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud </h2>
+                    <div class="col-md-12">
+                        <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section col-xs-12 block">
+        <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-3 courses f-ocup">
+                    <div class="col-md-4">
                         <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
                         <h2>A Title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud</p>
                     </div>
-                    <div class="col-xs-3 courses f-priv">
+                    <div class="col-md-4">
                         <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
                         <h2>A title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud</p>
                     </div>
-                    <div class="col-xs-3 courses c-form">
-                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
-                        <h2>A title</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud</p>
-                    </div>
-                    <div class="col-xs-3 courses master">
+                    <div class="col-md-4">
                         <img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive">
                         <h2>A title</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 info">
-                        <a class="active btn btn-lg btn-primary">Més informació</a>
+                    <div class="col-md-12">
+                        <a class="active btn btn-lg btn-primary">Click me</a>
                     </div>
                 </div>
             </div>
@@ -143,11 +124,11 @@
                 </div>
             </div>
         </div>
-        <div class="section col-xs-12 block">
+        <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud </p>
+                        <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisici elit, <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud </p>
                         <a class="active btn btn-lg btn-primary overall">Click me</a>
                     </div>
                 </div>
@@ -210,25 +191,9 @@
                     </div>
                 </div>
             </div>
-        </footer>        
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-<!--        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
--->
+        </footer>
+  
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     </body>
 </html>
