@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Libre Baskerville', serif;
+}
+a{
+    text-decoration: none;
+}
+.navbar {    
+    background-color: orange;
+}
+.navbar-brand {
+    width: 8em;
+    height: 3em;
+}
+.navbar-brand > img {
+    display: none;
+    margin-top: -0.5em;
+    }
+img.navbrand-sm{
+    display:none;
+}
+img.navbrand-xs {
+    display: block;
+    }
+@media (min-width: 768px) {
+    img.navbrand-sm {
+        display: block;
+        }
+    img.navbrand-xs {
+        display:none;
+        }
+    }
+.nav > li > a {
+    font-size: 15px;
+    font-weight: 800;
+    color: white !important;
+    margin-top: 2px;
+}
+#window{
+    width:100%;
+    height:100vh;
+    overflow: hidden;
+}
+#slider{
+    width:300%;
+    display: flex;
+    animation-name: slider1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    transition: 2s ease-in-out;
+}
+#slider:hover{
+    animation-play-state: running;
+}
+@keyframes slider1{
+    0%, 33% {margin-left: 0%;}
+    38%, 71% {margin-left: -100%;}
+    76%, 100% {margin-left: -200%;}   
+}
+.slideshow{
+    width:100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-height: 100%;
+    min-width: 100%;
+    
+}
